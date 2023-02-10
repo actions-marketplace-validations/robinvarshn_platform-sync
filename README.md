@@ -14,7 +14,7 @@ Github Action for triggering the platform sync workflow in FE Platform repositor
 ## Example Usage
 
 ```yaml
-- uses: AEMCS/platform-sync@v.0.1
+- uses: robinvarshn/platform-sync@master
   with:
     repo_token: ${{ secrets.REPO_TOKEN }}
     brand_name: <agency_brand_name>
