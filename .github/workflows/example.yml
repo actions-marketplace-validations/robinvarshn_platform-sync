@@ -8,7 +8,7 @@ jobs:
     name: Platform Sync
     runs-on: ubuntu-latest
     steps:
-      - uses: robinvarshn/platform-sync@master
+      - uses: robinvarshn/platform-sync@master-v1
         with:
             repo_token: ${{ secrets.TOKEN }}
             brand_name: <brandName> 
