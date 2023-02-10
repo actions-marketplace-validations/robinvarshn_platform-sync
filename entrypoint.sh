@@ -110,7 +110,6 @@ workflowStallHandler() {
     -H "X-GitHub-Api-Version: 2022-11-28" \
     ${GITHUB_API_URL}/repos/${org}/theme-${INPUT_BRAND_NAME}/pulls?state=open | jq -r '[.[].html_url][0]')
     then
-  
     if [[ ! -z "$response" ]] && [[ $response != "null" ]]
       then
         echo "PR Link": $response
