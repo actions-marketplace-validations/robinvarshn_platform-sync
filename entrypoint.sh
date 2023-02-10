@@ -131,7 +131,7 @@ entrypoint() {
   # Step 1: Validate the required arguments
   validateArgs
 
-    # Step 2: Fetch The Triggering The Workflow
+    # Step 2: Triggering The Workflow
     triggerWorkflowHandler
 
     # Step 3: Wait for the Job to be finished
