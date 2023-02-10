@@ -1,0 +1,14 @@
+name: Platform Sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    name: Platform Sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: robinvarshn/platform-sync@master
+        with:
+            repo_token: ${{ secrets.TOKEN }}
+            brand_name: <brandName> 

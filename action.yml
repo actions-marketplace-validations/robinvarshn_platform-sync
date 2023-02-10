@@ -1,0 +1,16 @@
+name: 'Sync Platform For Agency'
+description: 'This action triggers the platform sync workflow in FE Platform repository for a given brand.'
+author: 'Robin Varshney'
+branding:
+  icon: 'arrow-right'
+  color: 'yellow'
+inputs:
+  brand_name:
+    description: "The name of the brand that needs to be synced with platform"
+    required: true
+  repo_token:
+    description: "Github access token of the platform repository owner."
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
